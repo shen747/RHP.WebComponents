@@ -1,0 +1,16 @@
+.rhp-textarea {
+    // Modifiers
+    &--no-resize {
+        resize: none;
+    }
+
+    // Nested elements
+    > .rhp-input__content-wrapper .rhp-input__content {
+        padding: var(--a-padding-s) var(--a-padding-xs) var(--a-padding-xs) var(--a-padding-m);
+        gap: var(--a-padding-null);
+    }
+
+    > .rhp-input__content-wrapper .rhp-input__content > .rhp-input__trailing-content {
+        align-self: start;
+    }
+}

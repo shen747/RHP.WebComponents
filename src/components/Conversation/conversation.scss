@@ -1,0 +1,36 @@
+.rhp-conversation {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-m);
+
+    // Elements
+    &__message {
+        display: flex;
+
+        &--mine {
+            justify-content: flex-end;
+
+            .rhp-conversation__bubble {
+                background: var(--a-primary-bg-weak-default);
+                border-color: var(--a-primary-border-weak-default);
+            }
+        }
+    }
+
+    &__bubble {
+        max-width: 70%;
+        background: var(--a-neutral-bg-default);
+        border-radius: var(--a-radius-m);
+        padding: var(--a-padding-s);
+        border: 1px solid var(--a-neutral-border-weak-default);
+    }
+
+    &__meta {
+        display: flex;
+        gap: var(--a-spacing-m);
+        font: var(--a-text-xs-default);
+        opacity: 0.7;
+        margin-top: var(--a-spacing-xxs);
+    }
+}

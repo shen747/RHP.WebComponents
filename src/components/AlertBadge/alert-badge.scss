@@ -1,0 +1,54 @@
+.rhp-alert-badge {
+    // Block styles
+    display: inline-flex;
+
+    // Elements
+    .rhp-badge__wrapper {
+        display: flex;
+        position: relative;
+    }
+
+    // Modifiers
+    &--error {
+        color: var(--a-error-icon-inv-default);
+        background: var(--a-error-bg-default);
+    }
+
+    &--warning {
+        color: var(--a-warning-icon-default);
+        background: var(--a-warning-bg-default);
+    }
+
+    &--success {
+        color: var(--a-succesa-icon-inv-default);
+        background: var(--a-success-bg-default);
+    }
+
+    &--info {
+        color: var(--a-info-icon-inv-default);
+        background: var(--a-info-bg-default);
+    }
+}
+
+// Badge content styles
+.rhp-badge__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--a-padding-xs);
+    border-radius: var(--a-radius-xxl);
+    position: absolute;
+    float: right;
+    z-index: 1;
+    right: calc(-1 * var(--a-sizing-m) / 2);
+    top: calc(-1 * var(--a-sizing-m) / 2);
+    height: var(--a-sizing-m);
+    width: var(--a-sizing-m);
+
+    .rhp-icon {
+        height: var(--a-sizing-m);
+        width: var(--a-sizing-m);
+        font-size: var(--a-sizing-m);
+    }
+}

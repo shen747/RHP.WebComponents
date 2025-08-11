@@ -1,0 +1,11 @@
+.rhp-date-time-field {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-xxs);
+
+    // Elements
+    &__label {
+        font: var(--a-text-sm-strong);
+    }
+}

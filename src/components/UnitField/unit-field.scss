@@ -1,0 +1,12 @@
+.rhp-unit-field {
+    // Block styles
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    // Elements
+    &__unit {
+        min-width: 64px;
+        text-align: center;
+    }
+}

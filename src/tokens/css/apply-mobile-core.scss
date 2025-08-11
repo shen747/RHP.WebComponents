@@ -1,0 +1,76 @@
+:root[data-framework="framework-mobile"],
+.rhp-theme-provider-mobile {
+    // Font size tokens
+    --a-fontsize-100: 12px;
+    --a-fontsize-200: 14px;
+    --a-fontsize-300: 16px;
+    --a-fontsize-400: 20px;
+    --a-fontsize-500: 24px;
+    --a-fontsize-600: 32px;
+    --a-fontsize-700: 40px;
+    --a-fontsize-800: 48px;
+
+    // Font weight tokens
+    --a-fontweight-100: 100;
+    --a-fontweight-200: 200;
+    --a-fontweight-300: 300;
+    --a-fontweight-400: 400;
+    --a-fontweight-500: 500;
+    --a-fontweight-600: 600;
+    --a-fontweight-700: 700;
+    --a-fontweight-800: 800;
+
+    // Line height tokens
+    --a-lineheight-100: 12px;
+    --a-lineheight-200: 20px;
+    --a-lineheight-300: 22px;
+    --a-lineheight-400: 28px;
+    --a-lineheight-500: 36px;
+    --a-lineheight-600: 38px;
+    --a-lineheight-700: 48px;
+    --a-lineheight-800: 58px;
+
+    // Padding tokens
+    --a-padding-l: 16px;
+    --a-padding-m: 12px;
+    --a-padding-null: 0;
+    --a-padding-s: 8px;
+    --a-padding-xl: 20px;
+    --a-padding-xs: 4px;
+    --a-padding-xxl: 40px;
+
+    // Border radius tokens
+    --a-radius-l: 12px;
+    --a-radius-m: 8px;
+    --a-radius-null: 0;
+    --a-radius-s: 4px;
+    --a-radius-xl: 16px;
+    --a-radius-xs: 2px;
+    --a-radius-xxl: 24px;
+
+    // Icon sizing tokens
+    --a-sizing-icon-2xl: 48px;
+    --a-sizing-icon-3xl: 58px;
+    --a-sizing-icon-lg: 36px;
+    --a-sizing-icon-md: 22px;
+    --a-sizing-icon-sm: 20px;
+    --a-sizing-icon-xl: 38px;
+
+    // General sizing tokens
+    --a-sizing-l: 32px;
+    --a-sizing-m: 24px;
+    --a-sizing-null: 0;
+    --a-sizing-s: 16px;
+    --a-sizing-xl: 40px;
+    --a-sizing-xs: 12px;
+    --a-sizing-xxl: 48px;
+
+    // Spacing tokens
+    --a-spacing-l: 16px;
+    --a-spacing-m: 12px;
+    --a-spacing-null: 0;
+    --a-spacing-s: 8px;
+    --a-spacing-xl: 20px;
+    --a-spacing-xs: 4px;
+    --a-spacing-xxl: 40px;
+}

@@ -1,0 +1,41 @@
+.rhp-notification {
+    // Block styles
+    padding: var(--a-padding-m);
+    border-radius: var(--a-radius-s);
+    margin: var(--a-spacing-s) 0;
+
+    // Elements
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--a-spacing-s);
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__close {
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    // Modifiers
+    &--info {
+        background: var(--a-info-bg-weak-default);
+    }
+
+    &--success {
+        background: var(--a-success-bg-weak-default);
+    }
+
+    &--warning {
+        background: var(--a-warning-bg-weak-default);
+    }
+
+    &--error {
+        background: var(--a-error-bg-weak-default);
+    }
+}

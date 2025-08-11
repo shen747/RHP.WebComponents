@@ -1,0 +1,18 @@
+.rhp-bottom-navigation {
+    // Block styles
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: var(--a-spacing-s);
+    justify-content: space-around;
+    background: var(--a-neutral-bg-default);
+    border-top: 1px solid var(--a-neutral-border-weak-default);
+    padding: var(--a-padding-s);
+
+    // Modifiers
+    &--hidden {
+        display: none;
+    }
+}

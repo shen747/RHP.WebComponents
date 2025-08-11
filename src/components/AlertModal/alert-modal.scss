@@ -1,0 +1,45 @@
+.rhp-alert-modal {
+    // Block styles
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    // Elements
+    &__backdrop {
+        position: absolute;
+        inset: 0;
+        background: color-mix(in oklab, var(--a-neutral-bg-default), #000 60%);
+        opacity: 0.5;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        background: var(--a-neutral-bg-default);
+        color: var(--a-neutral-txt-default);
+        border-radius: var(--a-radius-m);
+        box-shadow: var(--a-elevation-300);
+        padding: var(--a-padding-l);
+        min-width: 280px;
+        max-width: 90vw;
+    }
+
+    &__title {
+        font: var(--a-text-lg-strong);
+        margin-bottom: var(--a-spacing-s);
+    }
+
+    &__message {
+        font: var(--a-text-md-default);
+        margin-bottom: var(--a-spacing-m);
+    }
+
+    &__actions {
+        display: flex;
+        gap: var(--a-spacing-s);
+        justify-content: flex-end;
+    }
+}

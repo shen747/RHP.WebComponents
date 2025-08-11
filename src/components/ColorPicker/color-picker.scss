@@ -1,0 +1,22 @@
+.rhp-color-picker {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-s);
+
+    // Elements
+    &__canvas {
+        background: linear-gradient(90deg, #f00, #0f0, #00f);
+        border-radius: var(--a-radius-s);
+    }
+
+    &__controls {
+        display: flex;
+        gap: var(--a-spacing-s);
+    }
+
+    // Form elements
+    input[type="text"] {
+        width: 100px;
+    }
+}

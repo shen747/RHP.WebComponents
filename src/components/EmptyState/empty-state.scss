@@ -1,0 +1,32 @@
+.rhp-empty-state {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--a-spacing-s);
+    padding: var(--a-padding-xl);
+    border: 1px dashed var(--a-neutral-border-weak-default);
+    border-radius: var(--a-radius-m);
+
+    // Elements
+    &__icon {
+        font-size: 40px;
+        opacity: 0.7;
+    }
+
+    &__title {
+        font: var(--a-text-lg-strong);
+    }
+
+    &__desc {
+        font: var(--a-text-sm-default);
+        opacity: 0.8;
+    }
+
+    &__actions {
+        display: flex;
+        gap: var(--a-spacing-m);
+    }
+}

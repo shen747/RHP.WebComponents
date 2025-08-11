@@ -1,0 +1,17 @@
+.rhp-slider {
+    // Block styles
+    display: inline-flex;
+    align-items: center;
+    gap: var(--a-spacing-s);
+
+    // Form elements
+    input[type="range"] {
+        width: 200px;
+    }
+
+    // Elements
+    &__thumb-label {
+        margin-left: var(--a-spacing-s);
+        font: var(--a-text-sm-default);
+    }
+}

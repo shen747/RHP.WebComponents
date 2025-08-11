@@ -1,0 +1,55 @@
+.rhp-avatar {
+    // Block styles
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--a-neutral-bg-raised-default);
+    color: var(--a-neutral-txt-default);
+
+    // Elements
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__fallback {
+        font: var(--a-text-md-strong);
+    }
+
+    // Shape modifiers
+    &--circle {
+        border-radius: 9999px;
+    }
+
+    &--square {
+        border-radius: var(--a-radius-s);
+    }
+
+    // Size modifiers
+    &--xs {
+        width: 20px;
+        height: 20px;
+    }
+
+    &--s {
+        width: 24px;
+        height: 24px;
+    }
+
+    &--m {
+        width: 32px;
+        height: 32px;
+    }
+
+    &--l {
+        width: 40px;
+        height: 40px;
+    }
+
+    &--xl {
+        width: 48px;
+        height: 48px;
+    }
+}

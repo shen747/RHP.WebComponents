@@ -1,0 +1,20 @@
+$font: 'Inter', Microsoft YaHei, PingFang SC, Arial, Sans-Serif;
+
+// Use modern @use syntax instead of deprecated @import
+@use './css/apply-core.scss';
+@use './css/apply-light-core.scss';
+@use './css/apply-dark-core.scss';
+@use './css/apply-muted-core.scss';
+@use './css/apply-typography-core.scss';
+@use './css/apply-elevation.scss';
+@use './css/apply-desktop-core.scss';
+@use './css/apply-mobile-core.scss';
+@use './css/apply-styles.scss';
+
+// React-specific settings
+:root {
+    --font-family: #{$font};
+    --font-size-root: 13px;
+    --line-height-root: 20px;
+    --table-font-size: 13px;
+}

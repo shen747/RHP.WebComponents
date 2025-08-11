@@ -1,0 +1,36 @@
+.rhp-spacer {
+    // Block styles
+    display: block;
+
+    // Direction modifiers
+    &--horizontal {
+        width: var(--a-spacing-m);
+        height: 1px;
+    }
+
+    &--vertical {
+        height: var(--a-spacing-m);
+        width: 1px;
+    }
+
+    // Size modifiers
+    &--xs {
+        --a-spacing-m: var(--a-spacing-xs);
+    }
+
+    &--s {
+        --a-spacing-m: var(--a-spacing-s);
+    }
+
+    &--m {
+        --a-spacing-m: var(--a-spacing-m);
+    }
+
+    &--l {
+        --a-spacing-m: var(--a-spacing-l);
+    }
+
+    &--xl {
+        --a-spacing-m: var(--a-spacing-xl);
+    }
+}

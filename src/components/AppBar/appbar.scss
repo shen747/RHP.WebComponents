@@ -1,0 +1,29 @@
+.rhp-appbar {
+    // Block styles
+    display: flex;
+    align-items: center;
+    gap: var(--a-spacing-s);
+    padding: var(--a-padding-s) var(--a-padding-m);
+    background: var(--a-neutral-bg-raised-default);
+    color: var(--a-neutral-txt-default);
+    border-bottom: 1px solid var(--a-neutral-border-weak-default);
+
+    // Elements
+    &__title {
+        flex: 1;
+        font: var(--a-text-lg-strong);
+    }
+
+    &__section {
+        display: flex;
+        align-items: center;
+        gap: var(--a-spacing-xs);
+    }
+
+    // Modifiers
+    &--sticky {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+}

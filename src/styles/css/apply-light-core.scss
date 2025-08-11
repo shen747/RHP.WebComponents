@@ -1,0 +1,357 @@
+:root,
+.rhp-theme-provider-light {
+    /**
+    * @tokens Brand
+    * @presenter Color
+    */
+    --a-brand-bg-active: rgba(255, 255, 255, 0.2);
+    --a-brand-bg-default: #371ee1;
+    --a-brand-bg-hover: rgba(255, 255, 255, 0.1);
+    --a-brand-bg-weak-active: #4d58eb;
+    --a-brand-bg-weak-default: #f6f8ff;
+    --a-brand-bg-weak-hover: #a4b6fb;
+    --a-brand-border-active: #110662;
+    --a-brand-border-default: #371ee1;
+    --a-brand-border-hover: #221098;
+    --a-brand-border-weak-active: rgba(255, 255, 255, 0.3);
+    --a-brand-border-weak-default: rgba(255, 255, 255, 0.15);
+    --a-brand-border-weak-hover: rgba(255, 255, 255, 0.2);
+    --a-brand-icon-active: #ffffff;
+    --a-brand-icon-default: #f6f8ff;
+    --a-brand-icon-hover: #ecf1ff;
+    --a-brand-icon-inv-active: #ffffff;
+    --a-brand-icon-inv-default: #f6f8ff;
+    --a-brand-icon-inv-hover: #ecf1ff;
+    --a-brand-icon-weak-active: #f6f8ff;
+    --a-brand-icon-weak-default: #dae2fe;
+    --a-brand-icon-weak-hover: #ecf1ff;
+    --a-brand-icon-weak-inv-active: #f6f8ff;
+    --a-brand-icon-weak-inv-default: #dae2fe;
+    --a-brand-icon-weak-inv-hover: #ecf1ff;
+    --a-brand-txt-active: #ffffff;
+    --a-brand-txt-default: #f6f8ff;
+    --a-brand-txt-hover: #ecf1ff;
+    --a-brand-txt-inv-active: #ffffff;
+    --a-brand-txt-inv-default: #f6f8ff;
+    --a-brand-txt-inv-hover: #ecf1ff;
+    --a-brand-txt-weak-active: #f6f8ff;
+    --a-brand-txt-weak-default: #dae2fe;
+    --a-brand-txt-weak-hover: #ecf1ff;
+    --a-brand-txt-weak-inv-active: #221098;
+    --a-brand-txt-weak-inv-default: #4d58eb;
+    --a-brand-txt-weak-inv-hover: #371ee1;
+    /**
+    * @tokens-end
+    */
+    --a-datatable-actions-alpha-bg-active: rgba(255, 255, 255, 0.8);
+    --a-datatable-actions-alpha-bg-default: rgba(255, 255, 255, 0);
+    --a-datatable-actions-alpha-bg-disabled: rgba(255, 255, 255, 0.2);
+    --a-datatable-actions-alpha-bg-hover: rgba(255, 255, 255, 0.5);
+    --a-datatable-actions-alpha-border-active: #ffffff;
+    --a-datatable-actions-alpha-border-default: rgba(255, 255, 255, 0);
+    --a-datatable-actions-alpha-border-disabled: rgba(255, 255, 255, 0);
+    --a-datatable-actions-alpha-border-hover: rgba(255, 255, 255, 0.8);
+    --a-datatable-actions-bg-active: #e8e7e3;
+    --a-datatable-actions-bg-default: #ffffff;
+    --a-datatable-actions-bg-disabled: #f7f7f4;
+    --a-datatable-actions-bg-hover: #efeeeb;
+    --a-datatable-actions-border-active: #ffffff;
+    --a-datatable-actions-border-default: rgba(255, 255, 255, 0);
+    --a-datatable-actions-border-disabled: rgba(255, 255, 255, 0);
+    --a-datatable-actions-border-hover: rgba(255, 255, 255, 0.8);
+    --a-datatable-actiona-icon-active: #000000;
+    --a-datatable-actiona-icon-default: #383836;
+    --a-datatable-actiona-icon-disabled: rgba(0, 0, 0, 0.5);
+    --a-datatable-actiona-icon-hover: #1b1b1a;
+    --a-datatable-actions-txt-active: #1b1b1a;
+    --a-datatable-actions-txt-default: #383836;
+    --a-datatable-actions-txt-disabled: rgba(0, 0, 0, 0.5);
+    --a-datatable-actions-txt-hover: #383836;
+    --a-datatable-cell-bg-active: #ffffff;
+    --a-datatable-cell-bg-default: #ffffff;
+    --a-datatable-cell-bg-disabled: #f7f7f4;
+    --a-datatable-cell-bg-hover: #f6f8ff;
+    --a-datatable-cell-bg-weak-active: #dae2fe;
+    --a-datatable-cell-bg-weak-default: #f7f7f4;
+    --a-datatable-cell-bg-weak-hover: #ecf1ff;
+    --a-datatable-cell-border-active: #371ee1;
+    --a-datatable-cell-border-default: #bfbeb9;
+    --a-datatable-cell-border-disabled: #dad9d5;
+    --a-datatable-cell-border-hover: #4d58eb;
+    --a-datatable-cell-border-strong-active: #383836;
+    --a-datatable-cell-border-strong-default: #8d8c88;
+    --a-datatable-cell-border-strong-hover: #5c5b57;
+    --a-datatable-cell-border-weak-active: #bfbeb9;
+    --a-datatable-cell-border-weak-default: #e8e7e3;
+    --a-datatable-cell-border-weak-hover: #dad9d5;
+    --a-datatable-cell-icon-active: #000000;
+    --a-datatable-cell-icon-default: #383836;
+    --a-datatable-cell-icon-disabled: #8d8c88;
+    --a-datatable-cell-icon-hover: #1b1b1a;
+    --a-datatable-cell-icon-weak-active: #383836;
+    --a-datatable-cell-icon-weak-default: #8d8c88;
+    --a-datatable-cell-icon-weak-hover: #5c5b57;
+    --a-datatable-cell-txt-active: #000000;
+    --a-datatable-cell-txt-default: #383836;
+    --a-datatable-cell-txt-disabled: #8d8c88;
+    --a-datatable-cell-txt-hover: #1b1b1a;
+    --a-datatable-cell-txt-weak-active: #383836;
+    --a-datatable-cell-txt-weak-default: #8d8c88;
+    --a-datatable-cell-txt-weak-hover: #5c5b57;
+    --a-datatable-header-bg-active: #dae2fe;
+    --a-datatable-header-bg-default: #f7f7f4;
+    --a-datatable-header-bg-disabled: #f7f7f4;
+    --a-datatable-header-bg-hover: #ecf1ff;
+    --a-datatable-header-border-active: #5c5b57;
+    --a-datatable-header-border-default: #bfbeb9;
+    --a-datatable-header-border-disabled: #dad9d5;
+    --a-datatable-header-border-hover: #8d8c88;
+    --a-datatable-header-icon-active: #1b1b1a;
+    --a-datatable-header-icon-default: #1b1b1a;
+    --a-datatable-header-icon-disabled: #8d8c88;
+    --a-datatable-header-icon-hover: #1b1b1a;
+    --a-datatable-header-txt-active: #000000;
+    --a-datatable-header-txt-default: #383836;
+    --a-datatable-header-txt-disabled: #8d8c88;
+    --a-datatable-header-txt-hover: #1b1b1a;
+    --a-datatable-primary-bg-active: #110662;
+    --a-datatable-primary-bg-default: #4d58eb;
+    --a-datatable-primary-bg-disabled: #f6f8ff;
+    --a-datatable-primary-bg-hover: #371ee1;
+    --a-datatable-primary-icon-active: #110662;
+    --a-datatable-primary-icon-default: #371ee1;
+    --a-datatable-primary-icon-disabled: #a4b6fb;
+    --a-datatable-primary-icon-hover: #221098;
+    --a-datatable-primary-txt-active: #110662;
+    --a-datatable-primary-txt-default: #371ee1;
+    --a-datatable-primary-txt-disabled: #a4b6fb;
+    --a-datatable-primary-txt-hover: #221098;
+    --a-datatable-row-bg-active: #dae2fe;
+    --a-datatable-row-bg-default: #ffffff;
+    --a-datatable-row-bg-disabled: #f6f8ff;
+    --a-datatable-row-bg-hover: #ecf1ff;
+    --a-datatable-row-bg-weak-active: #dae2fe;
+    --a-datatable-row-bg-weak-default: #f7f7f4;
+    --a-datatable-row-bg-weak-hover: #ecf1ff;
+    --a-datatable-row-bg-zebra-default: #f7f7f4;
+    --a-datatable-row-border-active: #5c5b57;
+    --a-datatable-row-border-default: #bfbeb9;
+    --a-datatable-row-border-disabled: #dad9d5;
+    --a-datatable-row-border-hover: #8d8c88;
+    --a-datatable-row-border-strong-active: #383836;
+    --a-datatable-row-border-strong-default: #8d8c88;
+    --a-datatable-row-border-strong-hover: #5c5b57;
+    --a-datatable-row-border-weak-active: #bfbeb9;
+    --a-datatable-row-border-weak-default: #e8e7e3;
+    --a-datatable-row-border-weak-hover: #dad9d5;
+    /**
+    * @tokens Error
+    * @presenter Color
+    */
+    --a-error-bg-active: #670022;
+    --a-error-bg-default: #d50047;
+    --a-error-bg-hover: #910031;
+    --a-error-bg-weak-active: #fbdae5;
+    --a-error-bg-weak-default: #fef6f9;
+    --a-error-bg-weak-hover: #fdedf2;
+    --a-error-border-active: #670022;
+    --a-error-border-default: #d50047;
+    --a-error-border-hover: #910031;
+    --a-error-border-weak-active: rgba(103, 0, 34, 0.5);
+    --a-error-border-weak-default: rgba(213, 0, 71, 0.5);
+    --a-error-border-weak-hover: rgba(145, 0, 49, 0.5);
+    --a-error-icon-active: #670022;
+    --a-error-icon-default: #d50047;
+    --a-error-icon-hover: #910031;
+    --a-error-icon-inv-active: #ffffff;
+    --a-error-icon-inv-default: #fef6f9;
+    --a-error-icon-inv-hover: #fdedf2;
+    --a-error-txt-active: #670022;
+    --a-error-txt-default: #d50047;
+    --a-error-txt-hover: #910031;
+    --a-error-txt-inv-active: #ffffff;
+    --a-error-txt-inv-default: #fef6f9;
+    --a-error-txt-inv-hover: #fdedf2;
+    /**
+    * @tokens Info
+    * @presenter Color
+    */
+    --a-info-bg-active: #3c245a;
+    --a-info-bg-default: #8351c2;
+    --a-info-bg-hover: #583583;
+    --a-info-bg-weak-active: #e8dff4;
+    --a-info-bg-weak-default: #f9f7fc;
+    --a-info-bg-weak-hover: #f3eff9;
+    --a-info-border-active: #3c245a;
+    --a-info-border-default: #8351c2;
+    --a-info-border-hover: #583583;
+    --a-info-border-weak-active: rgba(60, 36, 90, 0.5);
+    --a-info-border-weak-default: rgba(132, 81, 193, 0.5);
+    --a-info-border-weak-hover: rgba(88, 53, 131, 0.5);
+    --a-info-icon-active: #3c245a;
+    --a-info-icon-default: #8351c2;
+    --a-info-icon-hover: #583583;
+    --a-info-icon-inv-active: #ffffff;
+    --a-info-icon-inv-default: #f9f7fc;
+    --a-info-icon-inv-hover: #f3eff9;
+    --a-info-txt-active: #3c245a;
+    --a-info-txt-default: #8351c2;
+    --a-info-txt-hover: #583583;
+    --a-info-txt-inv-active: #ffffff;
+    --a-info-txt-inv-default: #f9f7fc;
+    --a-info-txt-inv-hover: #f3eff9;
+    /**
+    * @tokens Neutral
+    * @presenter Color
+    */
+    --a-neutral-bg-active: #1b1b1a;
+    --a-neutral-bg-default-90a: rgba(255, 255, 255, 0.9);
+    --a-neutral-bg-default: #ffffff;
+    --a-neutral-bg-disabled: #f7f7f4;
+    --a-neutral-bg-hover: #383836;
+    --a-neutral-bg-inv-default-20a: rgba(71, 71, 70, 0.2);
+    --a-neutral-bg-inv-default: #5c5b57;
+    --a-neutral-bg-weak-active: #e8e7e3;
+    --a-neutral-bg-weak-default: #f7f7f4;
+    --a-neutral-bg-weak-hover: #efeeeb;
+    --a-neutral-border-active: #1b1b1a;
+    --a-neutral-border-default: #5c5b57;
+    --a-neutral-border-disabled: #dad9d5;
+    --a-neutral-border-hover: #383836;
+    --a-neutral-border-weak-active: #5c5b57;
+    --a-neutral-border-weak-default: #bfbeb9;
+    --a-neutral-border-weak-hover: #8d8c88;
+    --a-neutral-canvas-default: #f7f7f4;
+    --a-neutral-elevation-100-drop: rgba(27, 27, 26, 0.06);
+    --a-neutral-elevation-100-inner: rgba(27, 27, 26, 0.12);
+    --a-neutral-elevation-200-drop: rgba(27, 27, 26, 0.12);
+    --a-neutral-elevation-200-inner: rgba(27, 27, 26, 0.12);
+    --a-neutral-elevation-300-drop: rgba(27, 27, 26, 0.16);
+    --a-neutral-elevation-300-inner: rgba(27, 27, 26, 0.12);
+    --a-neutral-icon-active: #000000;
+    --a-neutral-icon-default: #383836;
+    --a-neutral-icon-disabled: #8d8c88;
+    --a-neutral-icon-hover: #1b1b1a;
+    --a-neutral-icon-inv-active: #ffffff;
+    --a-neutral-icon-inv-default: #f7f7f4;
+    --a-neutral-icon-inv-disabled: #bfbeb9;
+    --a-neutral-icon-inv-hover: #efeeeb;
+    --a-neutral-icon-weak-active: #1b1b1a;
+    --a-neutral-icon-weak-default: #5c5b57;
+    --a-neutral-icon-weak-hover: #383836;
+    --a-neutral-icon-weak-inv-active: #f7f7f4;
+    --a-neutral-icon-weak-inv-default: #dad9d5;
+    --a-neutral-icon-weak-inv-hover: #e8e7e3;
+    --a-neutral-shadow-button-drop: #efeeeb;
+    --a-neutral-shadow-button-inner: #f7f7f4;
+    --a-neutral-txt-active: #000000;
+    --a-neutral-txt-default: #383836;
+    --a-neutral-txt-disabled: #8d8c88;
+    --a-neutral-txt-hover: #1b1b1a;
+    --a-neutral-txt-inv-active: #ffffff;
+    --a-neutral-txt-inv-default: #f7f7f4;
+    --a-neutral-txt-inv-disabled: #bfbeb9;
+    --a-neutral-txt-inv-hover: #efeeeb;
+    --a-neutral-txt-weak-active: #1b1b1a;
+    --a-neutral-txt-weak-default: #5c5b57;
+    --a-neutral-txt-weak-hover: #383836;
+    --a-neutral-txt-weak-inv-active: #f7f7f4;
+    --a-neutral-txt-weak-inv-default: #dad9d5;
+    --a-neutral-txt-weak-inv-hover: #efeeeb;
+    /**
+    * @tokens Primary
+    * @presenter Color
+    */
+    --a-primary-bg-active: #110662;
+    --a-primary-bg-default: #371ee1;
+    --a-primary-bg-hover: #221098;
+    --a-primary-bg-weak-active: #dae2fe;
+    --a-primary-bg-weak-default: #f6f8ff;
+    --a-primary-bg-weak-hover: #ecf1ff;
+    --a-primary-border-active: #110662;
+    --a-primary-border-default: #371ee1;
+    --a-primary-border-hover: #221098;
+    --a-primary-border-weak-active: rgba(34, 16, 152, 0.5);
+    --a-primary-border-weak-default: rgba(0, 38, 229, 0.5);
+    --a-primary-border-weak-hover: rgba(0, 24, 162, 0.5);
+    --a-primary-icon-active: #110662;
+    --a-primary-icon-default: #371ee1;
+    --a-primary-icon-hover: #221098;
+    --a-primary-icon-inv-active: #ffffff;
+    --a-primary-icon-inv-default: #f6f8ff;
+    --a-primary-icon-inv-hover: #ecf1ff;
+    --a-primary-icon-weak-active: #221098;
+    --a-primary-icon-weak-default: #4d58eb;
+    --a-primary-icon-weak-hover: #371ee1;
+    --a-primary-icon-weak-inv-active: #f6f8ff;
+    --a-primary-icon-weak-inv-default: #dae2fe;
+    --a-primary-icon-weak-inv-hover: #ecf1ff;
+    --a-primary-txt-active: #110662;
+    --a-primary-txt-default: #371ee1;
+    --a-primary-txt-hover: #221098;
+    --a-primary-txt-inv-active: #ffffff;
+    --a-primary-txt-inv-default: #f6f8ff;
+    --a-primary-txt-inv-hover: #ecf1ff;
+    --a-primary-txt-weak-active: #221098;
+    --a-primary-txt-weak-default: #4d58eb;
+    --a-primary-txt-weak-hover: #371ee1;
+    --a-primary-txt-weak-inv-active: #f6f8ff;
+    --a-primary-txt-weak-inv-default: #dae2fe;
+    --a-primary-txt-weak-inv-hover: #ecf1ff;
+    /**
+    * @tokens Success
+    * @presenter Color
+    */
+    --a-success-bg-active: #00382b;
+    --a-success-bg-default: #00795d;
+    --a-success-bg-hover: #00513e;
+    --a-success-bg-weak-active: #cce8e2;
+    --a-success-bg-weak-default: #f2f9f8;
+    --a-success-bg-weak-hover: #e6f4f0;
+    --a-success-border-active: #00382b;
+    --a-success-border-default: #00795d;
+    --a-success-border-hover: #00513e;
+    --a-success-border-weak-active: rgba(0, 56, 43, 0.5);
+    --a-success-border-weak-default: rgba(1, 121, 93, 0.5);
+    --a-success-border-weak-hover: rgba(0, 81, 62, 0.5);
+    --a-succesa-icon-active: #00382b;
+    --a-succesa-icon-default: #00795d;
+    --a-succesa-icon-hover: #00513e;
+    --a-succesa-icon-inv-active: #ffffff;
+    --a-succesa-icon-inv-default: #f2f9f8;
+    --a-succesa-icon-inv-hover: #e6f4f0;
+    --a-success-txt-active: #00382b;
+    --a-success-txt-default: #00795d;
+    --a-success-txt-hover: #00513e;
+    --a-success-txt-inv-active: #ffffff;
+    --a-success-txt-inv-default: #f2f9f8;
+    --a-success-txt-inv-hover: #e6f4f0;
+    /**
+    * @tokens Warning
+    * @presenter Color
+    */
+    --a-warning-bg-active: #9a9336;
+    --a-warning-bg-default: #ece68c;
+    --a-warning-bg-hover: #c4bc45;
+    --a-warning-bg-weak-active: #ece68c;
+    --a-warning-bg-weak-default: #faf9e3;
+    --a-warning-bg-weak-hover: #f6f3c7;
+    --a-warning-border-active: #333112;
+    --a-warning-border-default: #716d28;
+    --a-warning-border-hover: #4b481b;
+    --a-warning-border-weak-active: rgba(51, 49, 18, 0.5);
+    --a-warning-border-weak-default: rgba(113, 109, 40, 0.5);
+    --a-warning-border-weak-hover: rgba(75, 72, 27, 0.5);
+    --a-warning-icon-active: #333112;
+    --a-warning-icon-default: #716d28;
+    --a-warning-icon-hover: #4b481b;
+    --a-warning-icon-inv-active: #121106;
+    --a-warning-icon-inv-default: #4b481b;
+    --a-warning-icon-inv-hover: #333112;
+    --a-warning-txt-active: #333112;
+    --a-warning-txt-default: #716d28;
+    --a-warning-txt-hover: #4b481b;
+    --a-warning-txt-inv-active: #121106;
+    --a-warning-txt-inv-default: #4b481b;
+    --a-warning-txt-inv-hover: #333112;
+}

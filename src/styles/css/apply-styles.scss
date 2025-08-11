@@ -1,0 +1,306 @@
+// Padding utilities
+.pa-null {
+    padding: var(--a-padding-null) !important;
+}
+.pa-xs {
+    padding: var(--a-padding-xs) !important;
+}
+.pa-s {
+    padding: var(--a-padding-s) !important;
+}
+.pa-m {
+    padding: var(--a-padding-m) !important;
+}
+.pa-l {
+    padding: var(--a-padding-l) !important;
+}
+.pa-xl {
+    padding: var(--a-padding-xl) !important;
+}
+.pa-xxl {
+    padding: var(--a-padding-xxl) !important;
+}
+
+// Padding top utilities
+.pt-null {
+    padding-top: var(--a-padding-null) !important;
+}
+.pt-xs {
+    padding-top: var(--a-padding-xs) !important;
+}
+.pt-s {
+    padding-top: var(--a-padding-s) !important;
+}
+.pt-m {
+    padding-top: var(--a-padding-m) !important;
+}
+.pt-l {
+    padding-top: var(--a-padding-l) !important;
+}
+.pt-xl {
+    padding-top: var(--a-padding-xl) !important;
+}
+.pt-xxl {
+    padding-top: var(--a-padding-xxl) !important;
+}
+
+// Padding bottom utilities
+.pb-null {
+    padding-bottom: var(--a-padding-null) !important;
+}
+.pb-xs {
+    padding-bottom: var(--a-padding-xs) !important;
+}
+.pb-s {
+    padding-bottom: var(--a-padding-s) !important;
+}
+.pb-m {
+    padding-bottom: var(--a-padding-m) !important;
+}
+.pb-l {
+    padding-bottom: var(--a-padding-l) !important;
+}
+.pb-xl {
+    padding-bottom: var(--a-padding-xl) !important;
+}
+.pb-xxl {
+    padding-bottom: var(--a-padding-xxl) !important;
+}
+
+// Padding inline start utilities
+.ps-null {
+    padding-inline-start: var(--a-padding-null) !important;
+}
+.ps-xs {
+    padding-inline-start: var(--a-padding-xs) !important;
+}
+.ps-s {
+    padding-inline-start: var(--a-padding-s) !important;
+}
+.ps-m {
+    padding-inline-start: var(--a-padding-m) !important;
+}
+.ps-l {
+    padding-inline-start: var(--a-padding-l) !important;
+}
+.ps-xl {
+    padding-inline-start: var(--a-padding-xl) !important;
+}
+.ps-xxl {
+    padding-inline-start: var(--a-padding-xxl) !important;
+}
+
+// Padding inline end utilities
+.pe-null {
+    padding-inline-end: var(--a-padding-null) !important;
+}
+.pe-xs {
+    padding-inline-end: var(--a-padding-xs) !important;
+}
+.pe-s {
+    padding-inline-end: var(--a-padding-s) !important;
+}
+.pe-m {
+    padding-inline-end: var(--a-padding-m) !important;
+}
+.pe-l {
+    padding-inline-end: var(--a-padding-l) !important;
+}
+.pe-xl {
+    padding-inline-end: var(--a-padding-xl) !important;
+}
+.pe-xxl {
+    padding-inline-end: var(--a-padding-xxl) !important;
+}
+
+// Margin utilities
+.ma-null {
+    margin: var(--a-margin-null) !important;
+}
+.ma-xs {
+    margin: var(--a-margin-xs) !important;
+}
+.ma-s {
+    margin: var(--a-margin-s) !important;
+}
+.ma-m {
+    margin: var(--a-margin-m) !important;
+}
+.ma-l {
+    margin: var(--a-margin-l) !important;
+}
+.ma-xl {
+    margin: var(--a-margin-xl) !important;
+}
+.ma-xxl {
+    margin: var(--a-margin-xxl) !important;
+}
+
+// Gap utilities
+.g-null {
+    gap: var(--a-spacing-null) !important;
+}
+.g-xs {
+    gap: var(--a-spacing-xs) !important;
+}
+.g-s {
+    gap: var(--a-spacing-s) !important;
+}
+.g-m {
+    gap: var(--a-spacing-m) !important;
+}
+.g-l {
+    gap: var(--a-spacing-l) !important;
+}
+.g-xl {
+    gap: var(--a-spacing-xl) !important;
+}
+.g-xxl {
+    gap: var(--a-spacing-xxl) !important;
+}
+
+// Border radius utilities
+.rounded-null {
+    border-radius: var(--a-radius-null) !important;
+}
+.rounded-xs {
+    border-radius: var(--a-radius-xs) !important;
+}
+.rounded-s {
+    border-radius: var(--a-radius-s) !important;
+}
+.rounded-m {
+    border-radius: var(--a-radius-m) !important;
+}
+.rounded-l {
+    border-radius: var(--a-radius-l) !important;
+}
+.rounded-xl {
+    border-radius: var(--a-radius-xl) !important;
+}
+.rounded-xxl {
+    border-radius: var(--a-radius-xxl) !important;
+}
+
+// Font size utilities
+.font-size-100 {
+    font-size: var(--a-fontsize-100) !important;
+}
+.font-size-200 {
+    font-size: var(--a-fontsize-200) !important;
+}
+.font-size-300 {
+    font-size: var(--a-fontsize-300) !important;
+}
+.font-size-400 {
+    font-size: var(--a-fontsize-400) !important;
+}
+.font-size-500 {
+    font-size: var(--a-fontsize-500) !important;
+}
+.font-size-600 {
+    font-size: var(--a-fontsize-600) !important;
+}
+.font-size-700 {
+    font-size: var(--a-fontsize-700) !important;
+}
+.font-size-800 {
+    font-size: var(--a-fontsize-800) !important;
+}
+
+// Line height utilities
+.line-height-100 {
+    line-height: var(--a-lineheight-100) !important;
+}
+.line-height-200 {
+    line-height: var(--a-lineheight-200) !important;
+}
+.line-height-300 {
+    line-height: var(--a-lineheight-300) !important;
+}
+.line-height-400 {
+    line-height: var(--a-lineheight-400) !important;
+}
+.line-height-500 {
+    line-height: var(--a-lineheight-500) !important;
+}
+.line-height-600 {
+    line-height: var(--a-lineheight-600) !important;
+}
+.line-height-700 {
+    line-height: var(--a-lineheight-700) !important;
+}
+.line-height-800 {
+    line-height: var(--a-lineheight-800) !important;
+}
+
+// Typography utilities
+.rhp-typography-display-large {
+    font: var(--a-display-lg-default);
+}
+.rhp-typography-display-medium {
+    font: var(--a-display-md-default);
+}
+.rhp-typography-display-small {
+    font: var(--a-display-sm-default);
+}
+.rhp-typography-title-large {
+    font: var(--a-title-lg-default);
+}
+.rhp-typography-title {
+    font: var(--a-title-md-default);
+}
+.rhp-typography-title-small {
+    font: var(--a-title-sm-default);
+}
+.rhp-typography-body {
+    font: var(--a-text-md-default);
+}
+.rhp-typography-body-strong {
+    font: var(--a-text-md-strong);
+}
+.rhp-typography-body-link {
+    font: var(--a-text-md-default-link);
+    text-decoration: underline;
+}
+.rhp-typography-button {
+    font: var(--a-text-md-strong);
+    letter-spacing: normal;
+    text-transform: none;
+}
+.rhp-typography-label {
+    font: var(--a-text-sm-default);
+}
+.rhp-typography-label-strong {
+    font: var(--a-text-sm-strong);
+}
+
+// Elevation utilities
+.rhp-elevation-100 {
+    box-shadow: var(--a-elevation-100);
+}
+.rhp-elevation-200 {
+    box-shadow: var(--a-elevation-200);
+}
+.rhp-elevation-300 {
+    box-shadow: var(--a-elevation-300);
+}
+
+// Background utilities
+.rhp-canvas-background {
+    background: var(--a-neutral-canvas-default);
+}
+.rhp-content-background {
+    background: var(--a-neutral-bg-default);
+}
+.rhp-bg-primary {
+    background: var(--a-primary-bg-default);
+}
+
+// Text color utilities
+.rhp-neutral-txt-color {
+    color: var(--a-neutral-txt-default);
+}
+.rhp-txt-primary {
+    color: var(--a-primary-txt-inv-default);
+}

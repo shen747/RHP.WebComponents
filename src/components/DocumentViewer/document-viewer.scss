@@ -1,0 +1,20 @@
+.rhp-document-viewer {
+    // Block styles
+    border: 1px solid var(--a-neutral-border-weak-default);
+    border-radius: var(--a-radius-m);
+    background: var(--a-neutral-bg-default);
+    min-height: 200px;
+    overflow: hidden;
+
+    // Elements
+    &__frame {
+        width: 100%;
+        height: 70vh;
+        border: 0;
+    }
+
+    &__empty {
+        padding: var(--a-padding-l);
+        opacity: 0.7;
+    }
+}

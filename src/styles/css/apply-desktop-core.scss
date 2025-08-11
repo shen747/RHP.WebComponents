@@ -1,0 +1,76 @@
+:root,
+.rhp-theme-provider-desktop {
+    /* Font size tokens */
+    --a-fontsize-100: 10px;
+    --a-fontsize-200: 12px;
+    --a-fontsize-300: 13px;
+    --a-fontsize-400: 16px;
+    --a-fontsize-500: 20px;
+    --a-fontsize-600: 28px;
+    --a-fontsize-700: 32px;
+    --a-fontsize-800: 40px;
+
+    /* Font weight tokens */
+    --a-fontweight-100: 100;
+    --a-fontweight-200: 200;
+    --a-fontweight-300: 300;
+    --a-fontweight-400: 400;
+    --a-fontweight-500: 500;
+    --a-fontweight-600: 600;
+    --a-fontweight-700: 700;
+    --a-fontweight-800: 800;
+
+    /* Line height tokens */
+    --a-lineheight-100: 10px;
+    --a-lineheight-200: 16px;
+    --a-lineheight-300: 20px;
+    --a-lineheight-400: 24px;
+    --a-lineheight-500: 28px;
+    --a-lineheight-600: 34px;
+    --a-lineheight-700: 38px;
+    --a-lineheight-800: 48px;
+
+    /* Padding tokens */
+    --a-padding-l: 12px;
+    --a-padding-m: 8px;
+    --a-padding-null: 0;
+    --a-padding-s: 4px;
+    --a-padding-xl: 16px;
+    --a-padding-xs: 2px;
+    --a-padding-xxl: 32px;
+
+    /* Border radius tokens */
+    --a-radius-l: 12px;
+    --a-radius-m: 8px;
+    --a-radius-null: 0;
+    --a-radius-s: 4px;
+    --a-radius-xl: 16px;
+    --a-radius-xs: 2px;
+    --a-radius-xxl: 24px;
+
+    /* Icon sizing tokens */
+    --a-sizing-icon-2xl: 38px;
+    --a-sizing-icon-3xl: 48px;
+    --a-sizing-icon-lg: 28px;
+    --a-sizing-icon-md: 20px;
+    --a-sizing-icon-sm: 16px;
+    --a-sizing-icon-xl: 34px;
+
+    /* General sizing tokens */
+    --a-sizing-l: 20px;
+    --a-sizing-m: 16px;
+    --a-sizing-null: 0;
+    --a-sizing-s: 12px;
+    --a-sizing-xl: 24px;
+    --a-sizing-xs: 8px;
+    --a-sizing-xxl: 32px;
+
+    /* Spacing tokens */
+    --a-spacing-l: 12px;
+    --a-spacing-m: 8px;
+    --a-spacing-null: 0;
+    --a-spacing-s: 4px;
+    --a-spacing-xl: 16px;
+    --a-spacing-xs: 2px;
+    --a-spacing-xxl: 32px;
+}

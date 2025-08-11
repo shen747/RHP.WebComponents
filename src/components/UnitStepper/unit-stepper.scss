@@ -1,0 +1,19 @@
+.rhp-unit-stepper {
+    // Block styles
+    display: inline-flex;
+    align-items: center;
+    gap: var(--a-spacing-xl);
+
+    // Elements
+    &__step-button {
+        width: 28px;
+        height: 28px;
+        border: 1px solid var(--a-neutral-border-weak-default);
+        background: var(--a-neutral-bg-default);
+        border-radius: var(--a-radius-s);
+    }
+
+    &__unit {
+        margin-left: var(--a-spacing-xs);
+    }
+}

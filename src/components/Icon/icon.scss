@@ -1,0 +1,67 @@
+.rhp-icon {
+    // Base icon styles
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    line-height: 1;
+    
+    // Inherit apply icon styles
+    &[class^='a-icon-'],
+    &[class*=' a-icon-'] {
+        font-family: 'apply-icon' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        
+        /* Better Font Rendering */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    // Size variants
+    &--xs {
+        font-size: 12px;
+        width: 12px;
+        height: 12px;
+    }
+    
+    &--s {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    &--m {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    &--l {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    &--xl {
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    &--xxl {
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    // Disabled state
+    &--disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

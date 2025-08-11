@@ -1,0 +1,18 @@
+.rhp-masthead {
+    // Block styles
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--a-padding-m) var(--a-padding-xl);
+    border-bottom: 1px solid var(--a-neutral-border-weak-default);
+
+    // Elements
+    &__title {
+        font: var(--a-title-md-default);
+    }
+
+    &__actions {
+        display: flex;
+        gap: var(--a-spacing-s);
+    }
+}

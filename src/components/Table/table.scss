@@ -1,0 +1,24 @@
+.rhp-table {
+    // Block styles
+    display: block;
+    overflow: auto;
+    border: 1px solid var(--a-neutral-border-weak-default);
+    border-radius: var(--a-radius-s);
+
+    // Table element
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    // Modifiers
+    &--hover {
+        table tbody tr:hover {
+            background: var(--a-neutral-bg-weak-hover);
+        }
+    }
+
+    &--fixed-header {
+        position: relative;
+    }
+}

@@ -1,0 +1,138 @@
+.rhp-date-time-picker-container {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        'date time'
+        'timezone today';
+    gap: 4px 8px;
+    padding: var(--a-spacing-m);
+    border: 1px solid var(--a-neutral-border-default);
+    border-radius: var(--a-radius-m);
+    background: var(--a-neutral-bg-default);
+
+    .rhp-date-time-picker-date {
+        grid-area: date;
+        display: flex;
+        flex-direction: column;
+        gap: var(--a-spacing-xs);
+        min-width: 140px;
+
+        label {
+            font-size: var(--a-font-size-s);
+            font-weight: 500;
+            color: var(--a-neutral-txt-default);
+        }
+
+        .rhp-date-picker {
+            padding: var(--a-spacing-s);
+            border: 1px solid var(--a-neutral-border-default);
+            border-radius: var(--a-radius-s);
+            background: var(--a-neutral-bg-default);
+            color: var(--a-neutral-txt-default);
+            font-size: var(--a-font-size-s);
+            
+            &:focus {
+                outline: none;
+                border-color: var(--a-primary-border-default);
+                box-shadow: 0 0 0 2px var(--a-primary-border-focus);
+            }
+        }
+    }
+
+    .rhp-date-time-picker-time {
+        grid-area: time;
+        display: flex;
+        flex-direction: column;
+        gap: var(--a-spacing-xs);
+        min-width: 120px;
+
+        label {
+            font-size: var(--a-font-size-s);
+            font-weight: 500;
+            color: var(--a-neutral-txt-default);
+        }
+
+        .rhp-time-picker {
+            padding: var(--a-spacing-s);
+            border: 1px solid var(--a-neutral-border-default);
+            border-radius: var(--a-radius-s);
+            background: var(--a-neutral-bg-default);
+            color: var(--a-neutral-txt-default);
+            font-size: var(--a-font-size-s);
+            
+            &:focus {
+                outline: none;
+                border-color: var(--a-primary-border-default);
+                box-shadow: 0 0 0 2px var(--a-primary-border-focus);
+            }
+        }
+    }
+
+    .rhp-date-time-picker-timezone {
+        grid-area: timezone;
+        display: flex;
+        flex-direction: column;
+        gap: var(--a-spacing-xs);
+        min-width: 200px;
+
+        label {
+            font-size: var(--a-font-size-s);
+            font-weight: 500;
+            color: var(--a-neutral-txt-default);
+        }
+
+        .rhp-timezone-picker {
+            padding: var(--a-spacing-s);
+            border: 1px solid var(--a-neutral-border-default);
+            border-radius: var(--a-radius-s);
+            background: var(--a-neutral-bg-default);
+            color: var(--a-neutral-txt-default);
+            font-size: var(--a-font-size-s);
+            
+            &:focus {
+                outline: none;
+                border-color: var(--a-primary-border-default);
+                box-shadow: 0 0 0 2px var(--a-primary-border-focus);
+            }
+        }
+    }
+
+    .rhp-date-time-picker-today {
+        grid-area: today;
+        display: flex;
+        align-items: end;
+
+        .rhp-today-button {
+            padding: var(--a-spacing-s) var(--a-spacing-m);
+            border: 1px solid var(--a-primary-border-default);
+            border-radius: var(--a-radius-s);
+            background: var(--a-primary-bg-default);
+            color: var(--a-primary-txt-default);
+            font-size: var(--a-font-size-s);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 80px;
+
+            &:hover {
+                background: var(--a-primary-bg-hover);
+                border-color: var(--a-primary-border-hover);
+            }
+
+            &:active {
+                background: var(--a-primary-bg-active);
+                border-color: var(--a-primary-border-active);
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px var(--a-primary-border-focus);
+            }
+        }
+    }
+}
+
+// Legacy class for backward compatibility
+.rhp-date-time-picker {
+    min-width: 18ch;
+}

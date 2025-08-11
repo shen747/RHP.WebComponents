@@ -1,0 +1,16 @@
+.rhp-container {
+    // Block styles
+    padding: var(--a-padding-l) var(--a-padding-xl);
+
+    // Elements
+    .rhp-panel {
+        border-radius: var(--a-radius-null);
+        border-inline-start: var(--a-padding-null);
+        border-inline-end: var(--a-padding-null);
+    }
+
+    // Responsive modifiers
+    @media (max-width: 600px) {
+        padding: var(--a-padding-null);
+    }
+}

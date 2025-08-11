@@ -1,0 +1,28 @@
+.rhp-bottom-sheet {
+    // Block styles
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    // Elements
+    &__backdrop {
+        position: absolute;
+        inset: 0;
+        background: color-mix(in oklab, var(--a-neutral-bg-default), #000 60%);
+        opacity: 0.5;
+    }
+
+    &__surface {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--a-neutral-bg-default);
+        color: var(--a-neutral-txt-default);
+        border-top-left-radius: var(--a-radius-l);
+        border-top-right-radius: var(--a-radius-l);
+        box-shadow: var(--a-elevation-300);
+        padding: var(--a-padding-xl);
+        border: 1px solid var(--a-neutral-border-weak-default);
+    }
+}

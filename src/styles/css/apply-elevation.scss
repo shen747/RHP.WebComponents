@@ -1,0 +1,25 @@
+:root {
+    /**
+  * @tokens Elevation
+  * @presenter Shadow
+  */
+    --a-elevation-100: 0px 1px 1px 0px rgba(27, 27, 26, 0.06), inset 0px -1px 1px 0px rgba(27, 27, 26, 0.12);
+    --a-elevation-200: 0px 2px 4px 0px rgba(27, 27, 26, 0.12), inset 0px -1px 1px 0px rgba(27, 27, 26, 0.12);
+    --a-elevation-300: 0px 4px 8px 0px rgba(27, 27, 26, 0.16), inset 0px -1px 1px 0px rgba(27, 27, 26, 0.12);
+    --a-elevation-button-default: 0px 1px 1px 0px rgba(27, 27, 26, 0.06), inset 0px -1px 1px 1px #efeeeb,
+        inset 0px 0px 2px 0px #f7f7f4;
+    --a-elevation-button-hover: 0px 1px 1px 0px rgba(27, 27, 26, 0.06), inset 0px -1px 1px 1px #efeeeb,
+        inset 0px 0px 2px 0px #f7f7f4;
+    --a-elevation-button-pressed: inset 0px 1px 2px 1px #bfbeb9, inset 0px -1px 1px 0px rgba(191, 190, 185, 0.4);
+    --a-elevation-mobile-actionbar-popover: 0px -4px 8px 0px rgba(17, 17, 16, 0.16);
+    --a-elevation-segmentedcontrol-default: 0px 1px 1px 0px rgba(17, 17, 16, 0.06);
+    --a-elevation-segmentedcontrol-hover: inset 0px -1px 1px 1px #f1f1ef, inset 0px 0px 2px 0px #f8f8f7;
+    --a-elevation-segmentedcontrol-pressed: inset 0px 1px 2px 1px #b9b9b5,
+        inset 0px -1px 1px 0px rgba(185, 185, 181, 0.4);
+    --a-elevation-sheet-elevation: -2px 0px 4px 0px rgba(17, 17, 16, 0.12), inset 1px 0px 1px 0px rgba(17, 17, 16, 0.12);
+    --a-elevation-validation-error: 0px 0px 0px 2px rgba(244, 161, 189, 0.75);
+    --a-elevation-validation-info: 0px 0px 0px 2px rgba(198, 175, 227, 0.75);
+    --a-elevation-validation-primary: 0px 0px 0px 2px rgba(164, 182, 251, 0.75);
+    --a-elevation-validation-success: 0px 0px 0px 2px rgba(127, 198, 182, 0.75);
+    --a-elevation-validation-warning: 0px 0px 0px 2px rgba(196, 188, 69, 0.75);
+}

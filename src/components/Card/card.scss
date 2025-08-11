@@ -1,0 +1,268 @@
+.rhp-card {
+    border-radius: var(--a-radius-m);
+    border: 1px solid var(--a-neutral-border-weak-default);
+    box-shadow: none;
+    background: var(--a-neutral-bg-default);
+    color: var(--a-neutral-txt-default);
+    overflow: initial;
+    z-index: initial;
+
+    &:link,
+    &:visited {
+        color: var(--a-neutral-txt-default);
+        text-decoration: none;
+    }
+    
+    // Fill available functionality
+    &.rhp-fill-available {
+        width: 100%;
+        height: 100%;
+    }
+    
+    // Layout grid styles
+    &.rhp-grid {
+        display: grid;
+    }
+    
+    &.rhp-grid-fill {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    // Fill layout
+    &.rhp-fill {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    // Flex layout
+    &.rhp-flex {
+        display: flex;
+        
+        // Flex alignment classes
+        &.align-start {
+            align-items: flex-start;
+        }
+        
+        &.align-center {
+            align-items: center;
+        }
+        
+        &.align-end {
+            align-items: flex-end;
+        }
+        
+        &.align-stretch {
+            align-items: stretch;
+        }
+        
+        &.align-baseline {
+            align-items: baseline;
+        }
+        
+        // Flex direction classes
+        &.row {
+            flex-direction: row;
+        }
+        
+        &.row-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        &.column {
+            flex-direction: column;
+        }
+        
+        &.column-reverse {
+            flex-direction: column-reverse;
+        }
+        
+        // Flex justify classes
+        &.justify-start {
+            justify-content: flex-start;
+        }
+        
+        &.justify-center {
+            justify-content: center;
+        }
+        
+        &.justify-end {
+            justify-content: flex-end;
+        }
+        
+        &.justify-space-between {
+            justify-content: space-between;
+        }
+        
+        &.justify-space-around {
+            justify-content: space-around;
+        }
+        
+        &.justify-space-evenly {
+            justify-content: space-evenly;
+        }
+        
+        // Flex wrap classes
+        &.wrap {
+            flex-wrap: wrap;
+        }
+        
+        &.nowrap {
+            flex-wrap: nowrap;
+        }
+        
+        &.wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    }
+    
+    // Card content
+    &__content {
+        // Layout grid styles
+        &.rhp-grid {
+            display: grid;
+        }
+        
+        &.rhp-grid-fill {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        
+        // Fill layout
+        &.rhp-fill {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        // Flex layout
+        &.rhp-flex {
+            display: flex;
+            
+            // Flex alignment classes
+            &.align-start {
+                align-items: flex-start;
+            }
+            
+            &.align-center {
+                align-items: center;
+            }
+            
+            &.align-end {
+                align-items: flex-end;
+            }
+            
+            &.align-stretch {
+                align-items: stretch;
+            }
+            
+            &.align-baseline {
+                align-items: baseline;
+            }
+            
+            // Flex direction classes
+            &.row {
+                flex-direction: row;
+            }
+            
+            &.row-reverse {
+                flex-direction: row-reverse;
+            }
+            
+            &.column {
+                flex-direction: column;
+            }
+            
+            &.column-reverse {
+                flex-direction: column-reverse;
+            }
+            
+            // Flex justify classes
+            &.justify-start {
+                justify-content: flex-start;
+            }
+            
+            &.justify-center {
+                justify-content: center;
+            }
+            
+            &.justify-end {
+                justify-content: flex-end;
+            }
+            
+            &.justify-space-between {
+                justify-content: space-between;
+            }
+            
+            &.justify-space-around {
+                justify-content: space-around;
+            }
+            
+            &.justify-space-evenly {
+                justify-content: space-evenly;
+            }
+            
+            // Flex wrap classes
+            &.wrap {
+                flex-wrap: wrap;
+            }
+            
+            &.nowrap {
+                flex-wrap: nowrap;
+            }
+            
+            &.wrap-reverse {
+                flex-wrap: wrap-reverse;
+            }
+        }
+        
+        // Height utility
+        &.rhp-h-100 {
+            height: 100%;
+        }
+    }
+    
+    // Layout grid container
+    .rhp-layout-grid {
+        display: grid;
+        gap: var(--a-spacing-m);
+        
+        &.rhp-no-gutters {
+            gap: 0;
+        }
+    }
+}
+
+// Card sub-components
+.rhp-card-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--a-spacing-s);
+    padding: var(--a-padding-m);
+}
+
+.rhp-card-title {
+    font: var(--a-text-lg-strong);
+    color: var(--a-neutral-txt-default);
+    padding: var(--a-padding-m);
+    padding-bottom: var(--a-padding-s);
+}
+
+.rhp-card-subtitle {
+    font: var(--a-text-md-default);
+    color: var(--a-neutral-txt-weak-default);
+    padding: 0 var(--a-padding-m);
+    padding-bottom: var(--a-padding-m);
+}
+
+.rhp-card-text {
+    font: var(--a-text-md-default);
+    color: var(--a-neutral-txt-default);
+    padding: var(--a-padding-m);
+    padding-top: var(--a-padding-s);
+}

@@ -1,0 +1,21 @@
+.rhp-hyperlink {
+    // Block styles
+    color: var(--a-primary-txt-default);
+    font: var(--a-text-md-default-link);
+
+    // Pseudo-class states
+    &:focus-visible {
+        border-radius: 2px;
+        outline: 2px solid var(--a-primary-border-default);
+    }
+
+    &:active {
+        color: var(--a-primary-txt-hover);
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: var(--a-primary-txt-hover);
+        text-decoration: underline;
+    }
+}

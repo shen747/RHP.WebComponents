@@ -1,0 +1,16 @@
+.rhp-sheet {
+    // Block styles
+    border: 1px solid var(--a-neutral-border-weak-default);
+    border-radius: var(--a-radius-s);
+    background: var(--a-neutral-bg-default);
+    padding: var(--a-padding-xl);
+
+    // Modifiers
+    &--rounded {
+        border-radius: var(--a-radius-l);
+    }
+}
+
+.rhp-fill-available {
+    height: 100%;
+}

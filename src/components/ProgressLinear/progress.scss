@@ -1,0 +1,111 @@
+.rhp-progress-linear {
+    position: relative;
+    background: var(--a-neutral-bg-weak-default);
+    border-radius: var(--a-radius-s);
+    overflow: hidden;
+    width: 100%;
+
+    &__bar {
+        background: var(--a-primary-bg-default);
+        height: 100%;
+        transition: width 0.3s ease;
+        border-radius: inherit;
+    }
+
+    &__indeterminate-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 30%;
+        background: var(--a-primary-bg-default);
+        border-radius: inherit;
+        animation: indeterminate-slide 1.5s ease-in-out infinite;
+    }
+
+    // State modifiers
+    &--indeterminate {
+        .rhp-progress-linear__bar {
+            width: 0;
+        }
+    }
+
+    &--absolute {
+        position: absolute;
+        z-index: 1000;
+    }
+
+    &--top {
+        top: 0;
+    }
+
+    &--bottom {
+        bottom: 0;
+    }
+
+    &--reverse {
+        direction: rtl;
+
+        .rhp-progress-linear__bar {
+            direction: ltr;
+        }
+
+        .rhp-progress-linear__indeterminate-bar {
+            animation: indeterminate-slide-reverse 1.5s ease-in-out infinite;
+        }
+    }
+
+    // Color variants
+    &--success {
+        .rhp-progress-linear__bar,
+        .rhp-progress-linear__indeterminate-bar {
+            background: var(--a-success-bg-default);
+        }
+    }
+
+    &--warning {
+        .rhp-progress-linear__bar,
+        .rhp-progress-linear__indeterminate-bar {
+            background: var(--a-warning-bg-default);
+        }
+    }
+
+    &--error {
+        .rhp-progress-linear__bar,
+        .rhp-progress-linear__indeterminate-bar {
+            background: var(--a-error-bg-default);
+        }
+    }
+
+    &--info {
+        .rhp-progress-linear__bar,
+        .rhp-progress-linear__indeterminate-bar {
+            background: var(--a-info-bg-default);
+        }
+    }
+}
+
+// Animations
+@keyframes indeterminate-slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes indeterminate-slide-reverse {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

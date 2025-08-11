@@ -1,0 +1,18 @@
+.rhp-divider {
+    border: none;
+    margin: 0;
+}
+
+.rhp-divider--horizontal {
+    border-top: 1px solid var(--a-neutral-border-weak-default);
+    width: 100%;
+}
+
+.rhp-divider--vertical {
+    border-left: 1px solid var(--a-neutral-border-weak-default);
+    height: 100%;
+}
+
+.rhp-divider--inset {
+    margin-inline: var(--a-spacing-m);
+}

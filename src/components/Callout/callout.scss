@@ -1,0 +1,94 @@
+.rhp-callout {
+    // Block styles
+    display: flex;
+    align-items: flex-start;
+    gap: var(--a-spacing-m);
+    border-radius: var(--a-radius-s);
+
+    // Elements
+    &__icon-container {
+        display: flex;
+    }
+
+    &__container {
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        font: var(--a-title-sm-default);
+    }
+
+    &__description {
+        color: var(--a-neutral-txt-default);
+    }
+
+    &__close-icon-container {
+        display: flex;
+        background: none;
+        border: none;
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    // Modifiers
+    &--inline {
+        font: var(--a-text-xs-default);
+        gap: var(--a-spacing-s);
+        align-items: center;
+    }
+
+    &--info {
+        border-left: 4px solid var(--a-info-border-default);
+        background: var(--a-info-bg-weak-default);
+
+        .rhp-callout__title {
+            color: var(--a-info-txt-default);
+        }
+
+        .rhp-callout__icon-container {
+            color: var(--a-info-icon-default);
+        }
+    }
+
+    &--success {
+        border-left: 4px solid var(--a-success-border-default);
+        background: var(--a-success-bg-weak-default);
+
+        .rhp-callout__title {
+            color: var(--a-success-txt-default);
+        }
+
+        .rhp-callout__icon-container {
+            color: var(--a-succesa-icon-default);
+        }
+    }
+
+    &--warning {
+        border-left: 4px solid var(--a-warning-border-default);
+        background: var(--a-warning-bg-weak-default);
+
+        .rhp-callout__title {
+            color: var(--a-warning-txt-default);
+        }
+
+        .rhp-callout__icon-container {
+            color: var(--a-warning-icon-default);
+        }
+    }
+
+    &--critical {
+        border-left: 4px solid var(--a-error-border-default);
+        background: var(--a-error-bg-weak-default);
+
+        .rhp-callout__title {
+            color: var(--a-error-txt-default);
+        }
+
+        .rhp-callout__icon-container {
+            color: var(--a-error-icon-default);
+        }
+    }
+}

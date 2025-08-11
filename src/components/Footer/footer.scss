@@ -1,0 +1,26 @@
+.rhp-footer {
+    // Block styles
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--a-spacing-m);
+    padding: var(--a-padding-m) var(--a-padding-xl);
+    border-top: 1px solid var(--a-neutral-border-weak-default);
+    background: var(--a-neutral-bg-default);
+
+    // Elements
+    &__right {
+        display: flex;
+        gap: var(--a-spacing-m);
+        align-items: center;
+    }
+
+    &__link {
+        color: var(--a-primary-txt-default);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

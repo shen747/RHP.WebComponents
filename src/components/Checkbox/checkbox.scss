@@ -1,0 +1,239 @@
+.rhp-checkbox {
+    // Block styles
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: var(--a-padding-s) 0;
+    align-items: center;
+    gap: 0;
+
+    // Elements
+    label {
+        font: var(--a-text-md-default);
+        cursor: pointer;
+        padding: 0 var(--a-padding-s);
+    }
+
+    &__selection-control {
+        display: inline-flex;
+        flex: 0 0 auto;
+        position: relative;
+
+        &-background {
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            top: 4px;
+            border: 1px solid transparent;
+            border-radius: 1px;
+        }
+
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            user-select: none;
+            z-index: 2;
+
+            &:disabled {
+                pointer-events: none;
+            }
+
+            &:focus-visible + i {
+                border-radius: var(--a-radius-s);
+                outline: 2px solid var(--a-primary-border-default);
+                outline-offset: -2px;
+            }
+        }
+
+        &.rhp-checkbox--default {
+            input:hover:not(:disabled) + .rhp-checkbox__selection-control-background {
+                background: var(--a-neutral-bg-weak-hover);
+            }
+        }
+
+        &.rhp-checkbox--selected {
+            input:hover + i {
+                color: var(--a-primary-icon-hover);
+            }
+        }
+
+        &.rhp-checkbox--indeterminate {
+            input:hover + i {
+                color: var(--a-primary-icon-hover);
+            }
+        }
+    }
+
+    &__icon {
+        z-index: 1;
+        font-size: var(--a-sizing-l);
+        height: var(--a-sizing-icon-md);
+        width: var(--a-sizing-icon-md);
+        border-radius: var(--a-radius-s);
+    }
+
+    &__label {
+        color: var(--a-neutral-txt-default);
+        font: var(--a-text-md-default);
+    }
+
+    // Modifiers
+    &--default {
+        > i {
+            color: var(--a-neutral-border-default);
+        }
+    }
+
+    &--selected {
+        > i {
+            color: var(--a-primary-border-default);
+        }
+    }
+
+    &--indeterminate {
+        > i {
+            color: var(--a-primary-border-default);
+        }
+    }
+
+    &--disabled {
+        color: var(--a-neutral-txt-disabled);
+        pointer-events: none;
+
+        label {
+            color: var(--a-neutral-icon-disabled);
+            pointer-events: none;
+        }
+
+        > .rhp-checkbox__selection-control {
+            .rhp-checkbox__selection-control-background {
+                background: var(--a-neutral-bg-disabled);
+            }
+
+            > i {
+                color: var(--a-neutral-icon-disabled);
+                pointer-events: none;
+            }
+        }
+    }
+
+    &--readonly {
+        > label {
+            cursor: default;
+        }
+
+        > .rhp-checkbox__selection-control {
+            .rhp-checkbox__selection-control-background {
+                background: var(--a-neutral-bg-disabled);
+            }
+
+            > i {
+                color: var(--a-neutral-border-disabled);
+            }
+
+            > input {
+                cursor: default;
+            }
+        }
+    }
+
+    &--success {
+        .rhp-checkbox__selection-control {
+            &.rhp-checkbox--default {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-success-bg-weak-hover);
+                    color: var(--a-success-border-hover);
+                }
+            }
+
+            &.rhp-checkbox--selected,
+            &.rhp-checkbox--indeterminate {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-success-bg-weak-hover);
+                    color: var(--a-success-bg-hover);
+                }
+            }
+
+            > i {
+                color: var(--a-success-bg-default);
+            }
+        }
+
+        .rhp-checkbox__label {
+            color: var(--a-success-txt-default);
+        }
+    }
+
+    &--critical {
+        .rhp-checkbox__selection-control {
+            &.rhp-checkbox--default {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-error-bg-weak-hover);
+                    color: var(--a-error-border-hover);
+                }
+            }
+
+            &.rhp-checkbox--selected,
+            &.rhp-checkbox--indeterminate {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-error-bg-weak-hover);
+                    color: var(--a-error-bg-hover);
+                }
+            }
+
+            > i {
+                color: var(--a-error-bg-default);
+            }
+        }
+
+        .rhp-checkbox__label {
+            color: var(--a-error-txt-default);
+        }
+    }
+
+    &--warning {
+        .rhp-checkbox__selection-control {
+            &.rhp-checkbox--default {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-warning-bg-weak-hover);
+                    color: var(--a-warning-icon-hover);
+                }
+            }
+
+            &.rhp-checkbox--selected,
+            &.rhp-checkbox--indeterminate {
+                input:hover + i,
+                &.rhp-checkbox__current-notification > i {
+                    background: var(--a-warning-bg-weak-hover);
+                    color: var(--a-warning-icon-hover);
+                }
+            }
+
+            > i {
+                color: var(--a-warning-border-default);
+            }
+        }
+
+        .rhp-checkbox__label {
+            color: var(--a-warning-txt-default);
+        }
+    }
+
+    // Required indicator
+    &.rhp-required {
+        label::after {
+            color: var(--a-error-icon-default);
+            content: "*";
+        }
+    }
+}

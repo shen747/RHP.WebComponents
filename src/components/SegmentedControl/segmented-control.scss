@@ -1,0 +1,85 @@
+.rhp-segmented-control {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    min-width: 0;
+    vertical-align: middle;
+
+    .rhp-button:disabled {
+        border-color: var(--a-neutral-border-weak-default);
+    }
+
+    .rhp-button:not(.rhp-button--disabled) {
+        &.rhp-button--selected {
+            background-color: var(--a-primary-bg-active);
+            color: var(--a-neutral-txt-inv-active);
+        }
+
+        &:active {
+            background: var(--a-primary-bg-active);
+            border-color: var(--a-primary-bg-active);
+            color: var(--a-neutral-txt-inv-active);
+        }
+
+        &:focus-visible {
+            border-color: var(--a-neutral-border-weak-default);
+            &:not(.rhp-button--selected):hover {
+                background: var(--a-primary-bg-weak-hover);
+                border-color: var(--a-primary-border-weak-hover);
+                color: var(--a-primary-txt-hover);
+            }
+        }
+
+        &.rhp-button--selected {
+            background: var(--a-primary-bg-active);
+            color: var(--a-neutral-txt-inv-active);
+        }
+    }
+
+    .rhp-button__shadow {
+        box-shadow: none;
+    }
+
+    .rhp-button:first-child {
+        border-start-end-radius: 0px;
+        border-end-end-radius: 0px;
+        border-start-start-radius: var(--a-radius-s);
+        border-end-start-radius: var(--a-radius-s);
+
+        & > .rhp-button__shadow {
+            border-start-end-radius: 0px;
+            border-end-end-radius: 0px;
+            border-start-start-radius: var(--a-radius-s);
+            border-end-start-radius: var(--a-radius-s);
+        }
+    }
+
+    .rhp-button:last-child {
+        border-start-start-radius: 0px;
+        border-end-start-radius: 0px;
+        border-start-end-radius: var(--a-radius-s);
+        border-end-end-radius: var(--a-radius-s);
+
+        & > .rhp-button__shadow {
+            border-start-start-radius: 0px;
+            border-end-start-radius: 0px;
+            border-start-end-radius: var(--a-radius-s);
+            border-end-end-radius: var(--a-radius-s);
+        }
+    }
+
+    .rhp-button:not(:last-child) {
+        border-inline-end: none;
+    }
+    .rhp-button:not(:first-child) {
+        border-inline-start: none;
+    }
+
+    .rhp-button:not(:first-child):not(:last-child) {
+        border-radius: 0px;
+
+        & > .rhp-button__shadow {
+            box-shadow: none;
+        }
+    }
+}

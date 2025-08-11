@@ -1,0 +1,121 @@
+.rhp-box {
+    // Base box styles
+    display: block;
+    box-sizing: border-box;
+    
+    // Fill available functionality
+    &.rhp-fill-available {
+        width: 100%;
+        height: 100%;
+    }
+    
+    // Layout grid styles
+    &.rhp-grid {
+        display: grid;
+    }
+    
+    &.rhp-grid-fill {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    // Fill layout
+    &.rhp-fill {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    // Flex layout
+    &.rhp-flex {
+        display: flex;
+        
+        // Flex alignment classes
+        &.align-start {
+            align-items: flex-start;
+        }
+        
+        &.align-center {
+            align-items: center;
+        }
+        
+        &.align-end {
+            align-items: flex-end;
+        }
+        
+        &.align-stretch {
+            align-items: stretch;
+        }
+        
+        &.align-baseline {
+            align-items: baseline;
+        }
+        
+        // Flex direction classes
+        &.row {
+            flex-direction: row;
+        }
+        
+        &.row-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        &.column {
+            flex-direction: column;
+        }
+        
+        &.column-reverse {
+            flex-direction: column-reverse;
+        }
+        
+        // Flex justify classes
+        &.justify-start {
+            justify-content: flex-start;
+        }
+        
+        &.justify-center {
+            justify-content: center;
+        }
+        
+        &.justify-end {
+            justify-content: flex-end;
+        }
+        
+        &.justify-space-between {
+            justify-content: space-between;
+        }
+        
+        &.justify-space-around {
+            justify-content: space-around;
+        }
+        
+        &.justify-space-evenly {
+            justify-content: space-evenly;
+        }
+        
+        // Flex wrap classes
+        &.wrap {
+            flex-wrap: wrap;
+        }
+        
+        &.nowrap {
+            flex-wrap: nowrap;
+        }
+        
+        &.wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    }
+    
+    // Layout grid container
+    .rhp-layout-grid {
+        display: grid;
+        gap: var(--a-spacing-m);
+        
+        &.rhp-no-gutters {
+            gap: 0;
+        }
+    }
+}

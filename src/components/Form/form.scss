@@ -1,0 +1,13 @@
+.rhp-form {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-l);
+
+    // Elements
+    &__actions {
+        display: flex;
+        gap: var(--a-spacing-m);
+        justify-content: flex-end;
+    }
+}

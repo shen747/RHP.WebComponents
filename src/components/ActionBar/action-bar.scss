@@ -1,0 +1,15 @@
+.rhp-action-bar {
+    // Block styles
+    display: flex;
+    align-items: center;
+    gap: var(--a-spacing-s);
+    padding: var(--a-padding-s);
+    background: var(--a-neutral-bg-default);
+    border-bottom: 1px solid var(--a-neutral-border-weak-default);
+
+    // Modifiers
+    &--dense {
+        gap: var(--a-spacing-xs);
+        padding: var(--a-padding-xs);
+    }
+}

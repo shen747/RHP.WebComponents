@@ -1,0 +1,10 @@
+.rhp-notifications {
+    // Block styles
+    position: fixed;
+    top: var(--a-padding-xl);
+    right: var(--a-padding-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-s);
+    z-index: 1000;
+}

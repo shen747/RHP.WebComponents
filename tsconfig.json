@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "resolveJsonModule": true,
+        "declaration": true,
+        "declarationDir": "./types",
+        "esModuleInterop": true,
+        "lib": ["DOM", "ES2021", "ESNext.String", "ESNext.Array"],
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "noEmit": false,
+        "outDir": "./dist-tmp",
+        "rootDir": "./src",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "paths": {
+            "@components": ["./src/components"],
+            "@components/*": ["./src/components/*"],
+            "@composables": ["./src/composables"],
+            "@composables/*": ["./src/composables/*"],
+            "@storybook-utils": ["./src/storybook/utils"],
+            "@storybook-utils/*": ["./src/storybook/utils/*"],
+            "@utils": ["./src/utils"],
+            "@utils/*": ["./src/utils/*"]
+        },
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES2015",
+        "types": ["node", "vitest/globals"]
+    },
+    "include": ["src", ".storybook"],
+    "exclude": ["node_modules", "Bin/**", "dist/**"]
+}
+

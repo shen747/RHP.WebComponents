@@ -1,0 +1,45 @@
+.rhp-drawer {
+    // Block styles
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    // Elements
+    &__backdrop {
+        position: absolute;
+        inset: 0;
+        background: color-mix(in lab, var(--a-neutral-bg-default), #000 60%);
+        opacity: 0.5;
+    }
+
+    &__panel {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: var(--a-neutral-bg-default);
+        color: var(--a-neutral-txt-default);
+        border-left: 1px solid var(--a-neutral-border-weak-default);
+        border-right: 1px solid var(--a-neutral-border-weak-default);
+        box-shadow: var(--a-elevation-300);
+        display: flex;
+        flex-direction: column;
+
+        &--right {
+            right: 0;
+        }
+
+        &--left {
+            left: 0;
+        }
+    }
+
+    &__title {
+        padding: var(--a-padding-m) var(--a-padding-xl);
+        border-bottom: 1px solid var(--a-neutral-border-weak-default);
+    }
+
+    &__content {
+        padding: var(--a-padding-xl);
+        overflow: auto;
+    }
+}

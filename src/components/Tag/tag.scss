@@ -1,0 +1,140 @@
+.rhp-tag {
+    // Block styles
+    display: flex;
+    padding: var(--a-padding-xs);
+    justify-content: center;
+    align-items: center;
+    gap: var(--a-padding-null);
+    border-radius: var(--a-radius-s);
+    font: var(--a-text-sm-strong);
+    display: inline-flex;
+    color: var(--tag-color);
+    background: var(--tag-background);
+    border: 1px solid var(--tag-border);
+
+    // CSS custom properties for theming
+    --tag-color: var(--a-neutral-txt-default);
+    --tag-border: var(--a-neutral-border-weak-default);
+    --tag-background: var(--a-neutral-bg-weak-default);
+
+    // Elements
+    &__shadow {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: var(--a-radius-s);
+        transition-duration: 0.28s;
+        transition-property: box-shadow;
+        mix-blend-mode: multiply;
+        pointer-events: none;
+    }
+
+    &__content {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: var(--a-padding-null) var(--a-padding-xs);
+        pointer-events: none;
+        cursor: default;
+    }
+
+    // Root modifier (for hover states)
+    &.rhp-tag__root {
+        position: relative;
+        display: relative;
+
+        &:hover {
+            color: var(--tag-color-hover);
+            border: 1px solid var(--tag-border-hover);
+            background: var(--tag-background-hover);
+
+            > .rhp-tag__shadow {
+                box-shadow: var(--a-elevation-button-hover);
+            }
+        }
+
+        > .rhp-tag__shadow {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: var(--a-radius-s);
+            transition-duration: 0.28s;
+            transition-property: box-shadow;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+    }
+
+    // Modifiers
+    &--default {
+        --tag-color: var(--a-neutral-txt-default);
+        --tag-border: var(--a-neutral-border-weak-default);
+        --tag-background: var(--a-neutral-bg-weak-default);
+        --tag-color-hover: var(--a-neutral-txt-hover);
+        --tag-border-hover: var(--a-neutral-border-weak-hover);
+        --tag-background-hover: var(--a-neutral-bg-weak-hover);
+    }
+
+    &--primary {
+        --tag-color: var(--a-primary-txt-default);
+        --tag-border: var(--a-primary-border-weak-default);
+        --tag-background: var(--a-primary-bg-weak-default);
+        --tag-color-hover: var(--a-primary-txt-hover);
+        --tag-border-hover: var(--a-primary-border-weak-hover);
+        --tag-background-hover: var(--a-primary-bg-weak-hover);
+    }
+
+    &--info {
+        --tag-color: var(--a-info-txt-default);
+        --tag-border: var(--a-info-border-weak-default);
+        --tag-background: var(--a-info-bg-weak-default);
+        --tag-color-hover: var(--a-info-txt-hover);
+        --tag-border-hover: var(--a-info-border-weak-hover);
+        --tag-background-hover: var(--a-info-bg-weak-hover);
+    }
+
+    &--success {
+        --tag-color: var(--a-success-txt-default);
+        --tag-border: var(--a-success-border-weak-default);
+        --tag-background: var(--a-success-bg-weak-default);
+        --tag-color-hover: var(--a-success-txt-hover);
+        --tag-border-hover: var(--a-success-border-weak-hover);
+        --tag-background-hover: var(--a-success-bg-weak-hover);
+    }
+
+    &--warning {
+        --tag-color: var(--a-warning-txt-default);
+        --tag-border: var(--a-warning-border-weak-default);
+        --tag-background: var(--a-warning-bg-weak-default);
+        --tag-color-hover: var(--a-warning-txt-hover);
+        --tag-border-hover: var(--a-warning-border-weak-hover);
+        --tag-background-hover: var(--a-warning-bg-weak-hover);
+    }
+
+    &--critical {
+        --tag-color: var(--a-error-txt-default);
+        --tag-border: var(--a-error-border-weak-default);
+        --tag-background: var(--a-error-bg-weak-default);
+        --tag-color-hover: var(--a-error-txt-hover);
+        --tag-border-hover: var(--a-error-border-weak-hover);
+        --tag-background-hover: var(--a-error-bg-weak-hover);
+    }
+
+    // Button element (for dismissible tags)
+    .rhp__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--a-sizing-icon-sm);
+        height: var(--a-sizing-icon-sm);
+        padding: 0;
+        border: none;
+        background: none;
+    }
+}

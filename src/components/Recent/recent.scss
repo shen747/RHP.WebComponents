@@ -1,0 +1,17 @@
+.rhp-recent {
+    // Elements
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        padding: var(--a-padding-m) var(--a-padding-xl);
+        border-top: 1px solid var(--a-neutral-border-weak-default);
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+}

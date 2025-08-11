@@ -1,0 +1,22 @@
+.rhp-duration-field {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-xxs);
+
+    // Elements
+    &__label {
+        font: var(--a-text-sm-strong);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: var(--a-spacing-xs);
+    }
+
+    // Form elements
+    input {
+        width: 6ch;
+    }
+}

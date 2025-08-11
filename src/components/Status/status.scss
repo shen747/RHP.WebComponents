@@ -1,0 +1,41 @@
+.rhp-status {
+    // Block styles
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0 var(--a-padding-m);
+    height: 24px;
+    font: var(--a-text-sm-default);
+    border: 1px solid transparent;
+
+    // Elements
+    &__label {
+        white-space: nowrap;
+    }
+
+    // Style modifiers
+    &--filled {
+        background: var(--a-neutral-bg-weak-default);
+    }
+
+    &--outlined {
+        border-color: var(--a-neutral-border-weak-default);
+    }
+
+    // Color modifiers
+    &--positive {
+        color: var(--a-success-txt-default);
+    }
+
+    &--negative {
+        color: var(--a-error-txt-default);
+    }
+
+    &--warning {
+        color: var(--a-warning-txt-default);
+    }
+
+    &--info {
+        color: var(--a-info-txt-default);
+    }
+}

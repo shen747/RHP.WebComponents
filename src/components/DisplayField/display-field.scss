@@ -1,0 +1,16 @@
+.rhp-display-field {
+    // Block styles
+    display: flex;
+    flex-direction: column;
+    gap: var(--a-spacing-xxs);
+
+    // Elements
+    &__label {
+        font: var(--a-text-sm-strong);
+        opacity: 0.8;
+    }
+
+    &__value {
+        font: var(--a-text-md-default);
+    }
+}

@@ -1,0 +1,51 @@
+.rhp-content-splitter {
+    // Block styles
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    // Pseudo-elements
+    &::before,
+    &::after {
+        flex: 1 1 0;
+        content: "";
+        border-color: var(--a-neutral-txt-default);
+        border-width: 0;
+        border-block-start-width: thin;
+        border-inline-start-width: thin;
+        opacity: 0.12;
+    }
+
+    // Elements
+    &__content-wrapper {
+        font: var(--a-title-sm-default);
+        padding-inline: var(--a-spacing-m);
+    }
+
+    // Modifiers
+    &--solid {
+        &::before,
+        &::after {
+            border-style: solid;
+        }
+    }
+
+    &--dashed {
+        &::before,
+        &::after {
+            border-style: dashed;
+        }
+    }
+
+    &--start {
+        &::before {
+            display: none;
+        }
+    }
+
+    &--end {
+        &::after {
+            display: none;
+        }
+    }
+}
